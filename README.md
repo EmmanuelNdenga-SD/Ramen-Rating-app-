@@ -1,4 +1,4 @@
-ood Review 
+# Food Review 
 An application for reviewing food in a restaurant.
 
 # How to set it up
