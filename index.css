@@ -1,0 +1,132 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: white;
+  color: #ffffff; /* White text for contrast */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: black;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Ramen Menu Section */
+#ramen-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+#ramen-menu img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 15px;
+  cursor: pointer;
+  border: 2px solid #ffd700; /* Gold border */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#ramen-menu img:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.6); /* Gold shadow */
+}
+
+/* Ramen Detail Section */
+#ramen-detail {
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+  backdrop-filter: blur(10px); /* Blur effect for glassmorphism */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#ramen-detail h2 {
+  color: black;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+#ramen-detail h3 {
+  color: black;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+#ramen-detail p {
+  color: black;
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+/* New Ramen Form */
+#new-ramen {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px); /* Blur effect for glassmorphism */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#new-ramen input,
+#new-ramen textarea,
+#new-ramen button {
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  font-size: 16px;
+  background: black ;
+  color:black;
+  transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+#new-ramen input::placeholder,
+#new-ramen textarea::placeholder {
+  color: white;
+}
+
+#new-ramen input:focus,
+#new-ramen textarea:focus {
+  border-color: #ffd700; /* Gold border on focus */
+  background: rgba(255, 255, 255, 0.2);
+  outline: none;
+}
+
+#new-ramen button {
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#new-ramen button:hover {
+  transform: translateY(-2px); /* Slight lift on hover */
+  background-color: blue;
+}
+
+#new-ramen button:active {
+  transform: translateY(0); /* Reset lift on click */
+}
