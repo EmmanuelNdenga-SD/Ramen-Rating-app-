@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   background: white;
-  color: #ffffff; /* White text for contrast */
+  color: #ffffff; 
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -19,7 +19,6 @@ h1 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-/* Ramen Menu Section */
 #ramen-menu {
   display: flex;
   flex-wrap: wrap;
@@ -34,18 +33,18 @@ h1 {
   object-fit: cover;
   border-radius: 15px;
   cursor: pointer;
-  border: 2px solid #ffd700; /* Gold border */
+  border: 2px solid #ffd700; 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 #ramen-menu img:hover {
-  transform: scale(1.1); /* Slightly enlarge on hover */
-  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.6); /* Gold shadow */
+  transform: scale(1.1); 
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.6); 
 }
 
-/* Ramen Detail Section */
+
 #ramen-detail {
-  background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+  background: rgba(255, 255, 255, 0.1); 
   padding: 25px;
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -53,7 +52,7 @@ h1 {
   width: 80%;
   max-width: 600px;
   text-align: center;
-  backdrop-filter: blur(10px); /* Blur effect for glassmorphism */
+  backdrop-filter: blur(10px); 
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -75,7 +74,7 @@ h1 {
   margin: 5px 0;
 }
 
-/* New Ramen Form */
+
 #new-ramen {
   display: flex;
   flex-direction: column;
@@ -86,7 +85,7 @@ h1 {
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(10px); /* Blur effect for glassmorphism */
+  backdrop-filter: blur(10px); 
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -109,7 +108,7 @@ h1 {
 
 #new-ramen input:focus,
 #new-ramen textarea:focus {
-  border-color: #ffd700; /* Gold border on focus */
+  border-color: #ffd700; 
   background: rgba(255, 255, 255, 0.2);
   outline: none;
 }
@@ -123,10 +122,10 @@ h1 {
 }
 
 #new-ramen button:hover {
-  transform: translateY(-2px); /* Slight lift on hover */
+  transform: translateY(-2px); 
   background-color: blue;
 }
 
 #new-ramen button:active {
-  transform: translateY(0); /* Reset lift on click */
+  transform: translateY(0); 
 }

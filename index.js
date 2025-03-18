@@ -21,7 +21,7 @@ const ramens = [
     comment: "Rich and creamy!" }
 ];
 
-// Display ramen images
+
 function displayRamens() {
   const ramenMenu = document.getElementById("ramen-menu");
   ramens.forEach(ramen => {
@@ -34,7 +34,7 @@ function displayRamens() {
   });
 }
 
-// Handle click on ramen image
+
 function handleClick(event) {
   const ramenId = event.target.dataset.id;
   const ramen = ramens.find(r => r.id == ramenId);
@@ -44,7 +44,7 @@ function handleClick(event) {
   document.getElementById("ramen-comment").textContent = `Comment: ${ramen.comment}`;
 }
 
-// Handle new ramen form submission
+
 function addSubmitListener() {
   const form = document.getElementById("new-ramen");
   form.addEventListener("submit", event => {
@@ -68,11 +68,11 @@ function addSubmitListener() {
   });
 }
 
-// Initialize the app
+
 function main() {
   displayRamens();
   addSubmitListener();
-  // Display the first ramen's details on page load
+
   if (ramens.length > 0) {
       const firstRamen = ramens[0];
       document.getElementById("ramen-name").textContent = firstRamen.name;
@@ -82,5 +82,5 @@ function main() {
   }
 }
 
-// Run the app after the DOM is fully loaded
+
 document.addEventListener("DOMContentLoaded", main);
